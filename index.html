@@ -1,24 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nagi Lab</title>
 <meta name="description" content="Nagi Lab is an independent studio building mobile apps and games for Android.">
-<style>
-  :root { --bg:#f7f6f2; --fg:#1d2327; --muted:#5b6770; --line:#dcd9d0; --accent:#2f6f73; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#14181b; --fg:#e8eaec; --muted:#9aa5ad; --line:#2a3036; --accent:#6fb3b7; } }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--fg);
-         font:16px/1.7 system-ui,-apple-system,"Segoe UI","Hiragino Sans","Noto Sans JP",sans-serif; }
-  main { max-width:680px; margin:0 auto; padding:72px 20px 48px; }
-  h1 { font-size:2.2rem; letter-spacing:.02em; margin:0 0 .2em; }
-  .tag { color:var(--muted); margin:0 0 2.5rem; }
-  h2 { font-size:1rem; text-transform:uppercase; letter-spacing:.12em; color:var(--accent); margin:2.5rem 0 .6rem; }
-  ul { padding-left:1.1em; margin:0; }
-  li { margin:.3em 0; }
-  footer { border-top:1px solid var(--line); margin-top:3.5rem; padding-top:1rem; color:var(--muted); font-size:.85rem; }
-</style>
+<link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
 <main>
@@ -26,11 +13,16 @@
   <p class="tag">An independent studio building mobile apps and games for Android.<br>
   Android 向けのアプリとゲームを開発している個人スタジオです。</p>
 
-  <h2>What we make</h2>
-  <ul>
-    <li>Casual social apps — simple, safe ways to find someone to talk to when you have free time.</li>
-    <li>Offline-first sandbox games.</li>
-  </ul>
+  <h2>Apps</h2>
+  <div class="card">
+    <h3>HIMA</h3>
+    <p>暇な時間に、同じく暇な人と気軽に話せるアプリ（18 歳以上）。Google Play で公開予定です。</p>
+    <p><a href="/hima/privacy/">プライバシーポリシー</a> ・ <a href="/hima/terms/">利用規約</a> ・ <a href="/hima/delete-account/">アカウントとデータの削除</a></p>
+  </div>
+  <div class="card">
+    <h3>Game title (in development)</h3>
+    <p>An offline-first sandbox game. Details will be announced before release.</p>
+  </div>
 
   <h2>Principles</h2>
   <ul>
@@ -39,8 +31,8 @@
     <li>We collect only the data an app needs, and explain it before we ask.</li>
   </ul>
 
-  <h2>Status</h2>
-  <p>Our first titles are in development and will be released on Google Play.</p>
+  <h2>Contact</h2>
+  <p><a href="/support/">サポート / Support</a></p>
 
   <footer>&copy; 2026 Nagi Lab</footer>
 </main>

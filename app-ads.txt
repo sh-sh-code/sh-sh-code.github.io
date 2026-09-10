@@ -1,0 +1,3 @@
+# app-ads.txt for Nagi Lab (https://sh-sh-code.github.io)
+# Authorized sellers of in-app advertising for apps published by Nagi Lab.
+# Entries are added when each ad network account is issued (AppLovin MAX: pending account approval).
