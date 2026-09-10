@@ -5,6 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>HIMA アカウントとデータの削除 | Nagi Lab</title>
 <link rel="stylesheet" href="/assets/site.css">
+<style>
+  :root { --danger:#b3261e; --danger-text:#b3261e; }
+  @media (prefers-color-scheme: dark) { :root { --danger-text:#f2b8b5; } }
+  .btn { font:inherit; font-size:.95rem; line-height:1.4; border:1px solid var(--accent); background:var(--accent); color:var(--bg);
+         border-radius:8px; padding:.6em 1.2em; cursor:pointer; }
+  .btn.secondary { background:transparent; color:var(--accent); }
+  .btn.danger { background:var(--danger); border-color:var(--danger); color:#fff; }
+  .btn:disabled { opacity:.5; cursor:default; }
+  .actions { display:flex; flex-wrap:wrap; gap:.6rem; margin-top:.9rem; }
+  .who { margin:.2rem 0; overflow-wrap:anywhere; }
+  .err { color:var(--danger-text); }
+  #del p:first-child { margin-top:0; }
+  #del p:last-child { margin-bottom:0; }
+  .emu { font-size:.85rem; border:1px dashed var(--danger); color:var(--danger-text); padding:.3em .6em; border-radius:6px; margin-bottom:.8rem; }
+</style>
 </head>
 <body>
 <main>
@@ -12,41 +27,256 @@
   <h1>HIMA アカウントとデータの削除</h1>
   <p class="meta">アプリ名：HIMA ／ 開発者：Nagi Lab</p>
 
-  <h2>アプリから削除する（すぐに削除できます）</h2>
+  <h2>アプリから削除する（すぐに削除されます）</h2>
   <ol>
-    <li>HIMA を開き、下のメニューから「マイページ」を開きます。</li>
-    <li>いちばん下の「アカウント削除」を押します。</li>
-    <li>確認画面で「削除する」を押すと、アカウントとデータが削除されます。</li>
+    <li>HIMA を開き、下の「マイページ」を開きます。</li>
+    <li>いちばん下の「<strong>アカウントを削除</strong>」を押します。</li>
+    <li>確認画面で「削除する」を押すと、その場で削除されます（元に戻せません）。</li>
   </ol>
 
-  <h2>アプリを使えない場合（メールで依頼する）</h2>
-  <p>アプリを削除してしまった、ログインできないなどの場合は、次の内容をメールでお送りください。</p>
-  <ul>
-    <li>件名：「HIMA アカウント削除の依頼」</li>
-    <li>本文：HIMA にログインしていた Google アカウントのメールアドレス、ニックネーム</li>
-  </ul>
-  <p><strong>送り先：</strong><span class="contact-email">準備中（公開までに掲載します）</span></p>
-  <p class="meta">ご本人確認のため、ログインしていた Google アカウントのメールアドレスから送っていただくか、確認のご連絡をすることがあります。受け付けてから 30 日以内に削除し、完了をお知らせします。</p>
+  <h2>アプリを使えない場合（このページで削除する）</h2>
+  <p>アプリを削除した、端末を変えたなどでアプリから削除できない場合は、HIMA にログインしていた Google アカウントでこのページにログインすると、その場でアカウントとデータを削除できます。</p>
+  <p class="meta">ログインはご本人の確認のためだけに使います。「削除する」を押すまでは何も変わりません。</p>
 
-  <h2>削除されるデータ</h2>
-  <ul>
-    <li>アカウント（ログインの情報）</li>
-    <li>プロフィール（ニックネーム、生年月日、性別、都道府県）とプロフィール写真</li>
-    <li>「暇」状態と最終利用日時</li>
-    <li>送受信した 👋 とマッチの記録</li>
-    <li>プッシュ通知の宛先トークン</li>
-  </ul>
+  <div class="card" id="del" aria-live="polite">
+    <div class="emu" id="emu-banner" hidden>エミュレータ接続中（開発用。本番のデータには触れません）</div>
 
-  <h2>削除されない、または一定期間保存するデータ</h2>
-  <ul>
-    <li>送信済みのメッセージは、相手の画面に残る場合があります（送信者の名前は「退会したユーザー」と表示されます）。</li>
-    <li>ブロック・通報・利用停止の記録は、他の利用者の安全を守るため、および法令上の必要がある場合に、その目的に必要な期間保存することがあります。</li>
-    <li>利用分析・障害の記録（個人を直接特定しない形式）は、各サービスの保存期間に従って自動的に削除されます。</li>
-  </ul>
+    <div data-state="start">
+      <p>HIMA で使っていた Google アカウントでログインしてください。</p>
+      <p class="err" id="start-note" hidden></p>
+      <div class="actions"><button class="btn" id="btn-signin" type="button" disabled>Google でログイン</button></div>
+    </div>
+
+    <div data-state="busy" hidden>
+      <p id="busy-text">確認しています…</p>
+    </div>
+
+    <div data-state="account" hidden>
+      <p>次のアカウントでログインしています。</p>
+      <p class="who"><strong id="acc-email"></strong></p>
+      <p class="who meta" id="acc-nick"></p>
+      <p>このアカウントの HIMA のデータを削除します。削除すると<strong>元に戻せません</strong>。</p>
+      <div class="actions">
+        <button class="btn danger" id="btn-confirm" type="button">削除に進む</button>
+        <button class="btn secondary" data-action="switch" type="button">別のアカウントでログインし直す</button>
+      </div>
+    </div>
+
+    <div data-state="confirm" hidden>
+      <p><strong>本当に削除しますか？</strong></p>
+      <p class="who"><span id="confirm-email"></span></p>
+      <p>アカウント、プロフィール、写真、あいさつ・マッチの記録などがすべて削除され、元に戻せません。</p>
+      <div class="actions">
+        <button class="btn danger" id="btn-delete" type="button">削除する</button>
+        <button class="btn secondary" id="btn-cancel" type="button">やめる</button>
+      </div>
+    </div>
+
+    <div data-state="done" hidden>
+      <p><strong>削除が完了しました。</strong></p>
+      <p>HIMA のアカウントとデータを削除し、このページからもログアウトしました。ご利用ありがとうございました。</p>
+    </div>
+
+    <div data-state="none" hidden>
+      <p><strong>このアカウントでは HIMA を利用した記録がありませんでした。</strong></p>
+      <p class="who"><span id="none-email"></span></p>
+      <p>削除するデータはありません（このページで確認のために作られたログインの情報も削除しました）。別の Google アカウントで HIMA を使っていた場合は、そのアカウントでログインし直してください。</p>
+      <div class="actions"><button class="btn secondary" data-action="switch" type="button">別のアカウントでログインする</button></div>
+    </div>
+
+    <div data-state="error" hidden>
+      <p class="err" id="error-text"></p>
+      <div class="actions">
+        <button class="btn" id="btn-retry" type="button">もう一度試す</button>
+        <button class="btn secondary" data-action="switch" type="button" id="btn-error-switch">最初からやり直す</button>
+      </div>
+    </div>
+
+    <noscript><p class="err">このページで削除するには JavaScript を有効にしてください。</p></noscript>
+  </div>
+
+  <h2>削除されるもの</h2>
+  <p>ログイン情報、プロフィール（ニックネーム・生年月日・性別・都道府県・自己紹介）、プロフィール写真、暇 ON の状態と最終利用時刻、あいさつ・マッチの記録、ブロックの記録、写真の解放の記録、通知用の端末トークン。</p>
+  <p><strong>あなたが送ったメッセージの本文も削除</strong>され、相手の画面では「このメッセージは送信者の退会により削除されました」と表示されます（送信者名は「退会したユーザー」）。相手が送ったメッセージは相手の履歴として残ります。</p>
+
+  <h2>一定期間保存するもの</h2>
+  <p>通報に関する情報は、安全の確保と不正利用の調査のため、アカウントを削除した後も<strong>作成から最大 180 日</strong>保存し、その後削除します。</p>
+  <p>利用状況の統計（個人を特定しないもの）は各サービスの保存期間に従います。</p>
 
   <p>詳しくは<a href="/hima/privacy/">プライバシーポリシー</a>をご覧ください。</p>
+  <!-- 改定日：公開する日に入れる（hima-android docs/07_site-updates.md の P2） -->
 
   <footer>&copy; 2026 Nagi Lab</footer>
 </main>
+
+<script type="module">
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js'
+import {
+  getAuth, GoogleAuthProvider, signInWithPopup, signOut, deleteUser, getAdditionalUserInfo,
+  setPersistence, inMemoryPersistence, connectAuthEmulator,
+} from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js'
+import { getFunctions, httpsCallable, connectFunctionsEmulator } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-functions.js'
+
+// 公開用の Web アプリ設定（Firebase の Web 設定は公開前提の値。権限は Auth / Rules / 関数側で守る）。
+const firebaseConfig = {
+  apiKey: 'AIzaSyCNWVEIgGLBwfSF5MtTuxhxD70BXp93cEU',
+  authDomain: 'hima-app-1ddc4.firebaseapp.com',
+  projectId: 'hima-app-1ddc4',
+  storageBucket: 'hima-app-1ddc4.firebasestorage.app',
+  messagingSenderId: '98816247908',
+  appId: '1:98816247908:web:1c28bcbe4b4b0567cc3771',
+}
+const REGION = 'asia-northeast1'
+
+// 開発用: localhost で ?emu=1 のときだけエミュレータへ向ける（公開ドメインでは無視される）。
+const q = new URLSearchParams(location.search)
+const EMU = q.has('emu') && ['localhost', '127.0.0.1'].includes(location.hostname)
+const port = (k, d) => (/^\d{2,5}$/.test(q.get(k) ?? '') ? q.get(k) : d)
+const EP = { auth: port('auth', '9099'), fs: port('fs', '8080'), fn: port('fn', '5001') }
+
+const app = initializeApp(firebaseConfig)
+const auth = getAuth(app)
+auth.languageCode = 'ja'
+const functions = getFunctions(app, REGION)
+if (EMU) {
+  connectAuthEmulator(auth, `http://127.0.0.1:${EP.auth}`, { disableWarnings: true })
+  connectFunctionsEmulator(functions, '127.0.0.1', Number(EP.fn))
+  document.getElementById('emu-banner').hidden = false
+}
+const FIRESTORE = EMU
+  ? `http://127.0.0.1:${EP.fs}/v1/projects/${firebaseConfig.projectId}/databases/(default)/documents`
+  : `https://firestore.googleapis.com/v1/projects/${firebaseConfig.projectId}/databases/(default)/documents`
+// ログインはこのタブの中だけ（共用端末にログインを残さない）。
+const ready = setPersistence(auth, inMemoryPersistence).catch(() => {})
+
+const $ = (id) => document.getElementById(id)
+const states = [...document.querySelectorAll('#del [data-state]')]
+let current = 'start'
+function show(name) {
+  current = name
+  for (const s of states) s.hidden = s.dataset.state !== name
+  document.getElementById('del').dataset.current = name
+}
+function busy(text) { $('busy-text').textContent = text; show('busy') }
+
+let retry = null
+function fail(text, retryFn) {
+  $('error-text').textContent = text
+  retry = retryFn
+  $('btn-retry').hidden = !retryFn
+  show('error')
+}
+
+function signInMessage(code) {
+  switch (code) {
+    case 'auth/popup-blocked':
+      return 'ログイン用の画面（ポップアップ）がブラウザにブロックされました。このサイトのポップアップを許可してから、もう一度お試しください。'
+    case 'auth/network-request-failed':
+      return '通信できませんでした。電波のよい場所で、もう一度お試しください。'
+    case 'auth/web-storage-unsupported':
+    case 'auth/operation-not-supported-in-this-environment':
+      return 'このブラウザではログインできません。Chrome や Safari など、ほかのブラウザでお試しください。'
+    case 'auth/too-many-requests':
+      return '短い時間に何度も試されたため、一時的にログインできません。しばらく待ってからお試しください。'
+    default:
+      return `ただいまログインできません。時間をおいて、もう一度お試しください。（${code || 'unknown'}）`
+  }
+}
+
+async function readDoc(path, user) {
+  const token = await user.getIdToken()
+  const res = await fetch(`${FIRESTORE}/${path}`, { headers: { Authorization: `Bearer ${token}` } })
+  if (res.status === 404) return null
+  if (!res.ok) throw new Error(`read ${res.status}`)
+  return (await res.json()).fields ?? {}
+}
+
+async function onSignedIn(result) {
+  const user = result.user
+  const email = user.email || '(メールアドレス不明)'
+  if (getAdditionalUserInfo(result)?.isNewUser) {
+    // HIMA を使っていない Google アカウント。確認のために今できたログインの情報は、ここで消して帰す。
+    busy('確認しています…')
+    await deleteUser(user).catch(() => signOut(auth).catch(() => {}))
+    $('none-email').textContent = email
+    show('none')
+    return
+  }
+  $('acc-email').textContent = email
+  $('confirm-email').textContent = email
+  let nick = ''
+  try {
+    const [account, profile] = await Promise.all([readDoc(`users/${user.uid}`, user), readDoc(`profiles/${user.uid}`, user)])
+    if (profile?.nickname?.stringValue) nick = `HIMA のニックネーム：${profile.nickname.stringValue}`
+    else if (!account && !profile) nick = 'HIMA のプロフィールはまだありません（ログインの記録だけがあります）。'
+  } catch { /* 読めなくても削除はできる。表示だけ省く */ }
+  $('acc-nick').textContent = nick
+  $('acc-nick').hidden = !nick
+  show('account')
+}
+
+function startSignIn() {
+  $('start-note').hidden = true
+  const provider = new GoogleAuthProvider()
+  provider.setCustomParameters({ prompt: 'select_account' })
+  // 🔴 ポップアップはクリックの直後に開く（間に await を挟むとブロックされる）。
+  const pending = signInWithPopup(auth, provider)
+  busy('ログインしています…（別の画面で Google アカウントを選んでください）')
+  pending.then(onSignedIn).catch((e) => {
+    const code = e?.code ?? ''
+    if (code === 'auth/popup-closed-by-user' || code === 'auth/cancelled-popup-request' || code === 'auth/user-cancelled') {
+      $('start-note').textContent = 'ログインが完了しませんでした。もう一度お試しください。'
+      $('start-note').hidden = false
+      show('start')
+      return
+    }
+    fail(signInMessage(code), () => show('start'))
+  })
+}
+
+async function runDelete() {
+  busy('削除しています…（しばらくかかることがあります。この画面を閉じないでください）')
+  try {
+    await httpsCallable(functions, 'deleteAccount', { timeout: 120000 })({})
+    await signOut(auth).catch(() => {})
+    show('done')
+  } catch (e) {
+    const code = e?.code ?? ''
+    if (code === 'functions/unauthenticated') {
+      await signOut(auth).catch(() => {})
+      fail('ログインの有効期限が切れました。もう一度ログインしてからお試しください。（すでに削除が済んでいる場合は、ログインすると「記録がありません」と表示されます）', () => show('start'))
+      return
+    }
+    fail('削除を最後まで完了できませんでした。途中まで削除されていても、もう一度押せば最後まで削除されます。', runDelete)
+  }
+}
+
+async function switchAccount() {
+  await signOut(auth).catch(() => {})
+  $('start-note').hidden = true
+  show('start')
+}
+
+$('btn-signin').addEventListener('click', startSignIn)
+$('btn-confirm').addEventListener('click', () => show('confirm'))
+$('btn-cancel').addEventListener('click', () => show('account'))
+$('btn-delete').addEventListener('click', runDelete)
+$('btn-retry').addEventListener('click', () => retry && retry())
+document.querySelectorAll('#del [data-action="switch"]').forEach((b) => b.addEventListener('click', switchAccount))
+
+await ready
+$('btn-signin').disabled = false
+show('start')
+window.__himaDeleteReady = true
+</script>
+<script>
+// 読み込みに失敗した（通信・ブロック）ときに、押せないボタンのまま黙らない。
+setTimeout(function () {
+  if (window.__himaDeleteReady) return
+  var n = document.getElementById('start-note')
+  n.textContent = 'ログインの準備ができませんでした。通信を確認して、ページを再読み込みしてください。'
+  n.hidden = false
+}, 15000)
+</script>
 </body>
 </html>
