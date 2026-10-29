@@ -1,4 +1,4 @@
 # app-ads.txt for Nagi Lab (https://sh-sh-code.github.io)
 # Authorized sellers of in-app advertising for apps published by Nagi Lab.
-# Entries are added when each ad network account is issued (AppLovin MAX: pending account approval).
+# Ad network: Google AdMob (all Nagi Lab apps).
 google.com, pub-7706820711502453, DIRECT, f08c47fec0942fa0
