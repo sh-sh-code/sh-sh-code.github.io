@@ -1,0 +1,452 @@
+{
+ "version": 1,
+ "updated": "2026-11-02",
+ "rules": {
+  "show_only_public": true,
+  "adult_apps_only_from_adult_apps": true,
+  "no_reward_for_install": true,
+  "fallback_lang": "en"
+ },
+ "apps": [
+  {
+   "id": "samurairogue",
+   "package": "com.nagilab.samurairogue",
+   "public": true,
+   "icon": "https://play-lh.googleusercontent.com/BoOy4vf3FZzRPJDIs8E8u_NyyEgxg32Qmp7OAvMOE9Sv1Y9HIj34zsbrndq61iNQVktgJN1yddhGI7vBHLVlkIc=w240",
+   "adult": false,
+   "langs": [
+    "ja",
+    "en",
+    "zh-Hans",
+    "es",
+    "ar",
+    "fr",
+    "pt-BR"
+   ],
+   "store": "https://play.google.com/store/apps/details?id=com.nagilab.samurairogue",
+   "text": {
+    "ja": {
+     "name": "侍ローグ 百鬼夜行",
+     "desc": "妖怪の群れを片手で斬り抜けろ"
+    },
+    "en": {
+     "name": "Samurai Rogue",
+     "desc": "Slash through endless yokai hordes"
+    },
+    "zh-Hans": {
+     "name": "武士肉鸽：百鬼夜行",
+     "desc": "单手斩尽妖怪大军"
+    },
+    "es": {
+     "name": "Samurai Rogue",
+     "desc": "Abre paso entre hordas de yokai"
+    },
+    "ar": {
+     "name": "ساموراي روغ",
+     "desc": "اشقّ طريقك عبر جحافل اليوكاي"
+    },
+    "fr": {
+     "name": "Samurai Rogue",
+     "desc": "Tranchez des hordes de yokai"
+    },
+    "pt-BR": {
+     "name": "Samurai Rogue",
+     "desc": "Corte hordas infinitas de yokai"
+    }
+   }
+  },
+  {
+   "id": "yokaimahjong",
+   "package": "com.nagilab.yokaimahjong",
+   "public": true,
+   "icon": "https://play-lh.googleusercontent.com/rzSDczrvKkH4KBbkFtkCK7SdgMm9Pw1upT59jzO3EnuQujCcs2zI13lrTH7WKhTWlYie4c-cLJVi5e0NzFBl=w240",
+   "adult": false,
+   "langs": [
+    "ja",
+    "en",
+    "zh-Hans",
+    "es",
+    "ar",
+    "fr",
+    "pt-BR"
+   ],
+   "store": "https://play.google.com/store/apps/details?id=com.nagilab.yokaimahjong",
+   "text": {
+    "ja": {
+     "name": "百鬼雀",
+     "desc": "妖怪と組む麻雀ローグライト"
+    },
+    "en": {
+     "name": "Yokai Mahjong",
+     "desc": "Mahjong roguelite with yokai allies"
+    },
+    "zh-Hans": {
+     "name": "百鬼雀",
+     "desc": "与妖怪联手的麻将肉鸽"
+    },
+    "es": {
+     "name": "Yokai Mahjong",
+     "desc": "Roguelite de mahjong con yokai"
+    },
+    "ar": {
+     "name": "ماهجونغ اليوكاي",
+     "desc": "ماهجونغ روغلايت مع حلفاء اليوكاي"
+    },
+    "fr": {
+     "name": "Yokai Mahjong",
+     "desc": "Roguelite mahjong avec des yokai"
+    },
+    "pt-BR": {
+     "name": "Yokai Mahjong",
+     "desc": "Roguelite de mahjong com yokai"
+    }
+   }
+  },
+  {
+   "id": "rumorhigh",
+   "package": "com.nagilab.rumorhigh",
+   "public": true,
+   "icon": "https://play-lh.googleusercontent.com/Vxvl-EuXNR4BhmEVi7ag6Pos8H-Nt5TVV3WrynmgA0hKA-plDgt-CEi2Z2okYbjKPlmAx1XfjnnuItt384wn=w240",
+   "adult": false,
+   "langs": [
+    "ja",
+    "en",
+    "zh-Hans",
+    "es",
+    "ar",
+    "fr",
+    "pt-BR"
+   ],
+   "store": "https://play.google.com/store/apps/details?id=com.nagilab.rumorhigh",
+   "text": {
+    "ja": {
+     "name": "Rumor High",
+     "desc": "うわさで動く学園シミュレーター"
+    },
+    "en": {
+     "name": "Rumor High",
+     "desc": "A school sim where rumors rule"
+    },
+    "zh-Hans": {
+     "name": "Rumor High",
+     "desc": "传闻主宰的校园模拟"
+    },
+    "es": {
+     "name": "Rumor High",
+     "desc": "Simulador escolar movido por rumores"
+    },
+    "ar": {
+     "name": "Rumor High",
+     "desc": "محاكاة مدرسية تحكمها الشائعات"
+    },
+    "fr": {
+     "name": "Rumor High",
+     "desc": "Simulation scolaire régie par les rumeurs"
+    },
+    "pt-BR": {
+     "name": "Rumor High",
+     "desc": "Simulador escolar movido a boatos"
+    }
+   }
+  },
+  {
+   "id": "puzzlematsuri",
+   "package": "com.nagilab.puzzlematsuri",
+   "public": false,
+   "icon": "",
+   "adult": false,
+   "langs": [
+    "ja",
+    "en",
+    "zh-Hans",
+    "es",
+    "ar",
+    "fr",
+    "pt-BR"
+   ],
+   "store": "https://play.google.com/store/apps/details?id=com.nagilab.puzzlematsuri",
+   "text": {
+    "ja": {
+     "name": "Puzzle Matsuri",
+     "desc": "人気パズル6本と週のリーグ"
+    },
+    "en": {
+     "name": "Puzzle Matsuri",
+     "desc": "6 hit puzzles + weekly league"
+    },
+    "zh-Hans": {
+     "name": "Puzzle Matsuri",
+     "desc": "6款热门益智+每周联赛"
+    },
+    "es": {
+     "name": "Puzzle Matsuri",
+     "desc": "6 puzzles + liga semanal"
+    },
+    "ar": {
+     "name": "Puzzle Matsuri",
+     "desc": "6 ألغاز + دوري أسبوعي"
+    },
+    "fr": {
+     "name": "Puzzle Matsuri",
+     "desc": "6 puzzles + ligue hebdo"
+    },
+    "pt-BR": {
+     "name": "Puzzle Matsuri",
+     "desc": "6 quebra-cabeças + liga semanal"
+    }
+   }
+  },
+  {
+   "id": "lifelot",
+   "package": "com.nagilab.lifelot",
+   "public": false,
+   "icon": "",
+   "adult": false,
+   "langs": [
+    "ja",
+    "en",
+    "zh-Hans",
+    "es",
+    "ar",
+    "fr",
+    "pt-BR"
+   ],
+   "store": "https://play.google.com/store/apps/details?id=com.nagilab.lifelot",
+   "text": {
+    "ja": {
+     "name": "Lifelot",
+     "desc": "80億分の1の人生を生きる"
+    },
+    "en": {
+     "name": "Lifelot",
+     "desc": "Live one of 8 billion lives"
+    },
+    "zh-Hans": {
+     "name": "Lifelot",
+     "desc": "体验80亿分之一的人生"
+    },
+    "es": {
+     "name": "Lifelot",
+     "desc": "Vive una de 8 mil millones de vidas"
+    },
+    "ar": {
+     "name": "Lifelot",
+     "desc": "عِش حياة واحدة من 8 مليارات"
+    },
+    "fr": {
+     "name": "Lifelot",
+     "desc": "Vivez une vie parmi 8 milliards"
+    },
+    "pt-BR": {
+     "name": "Lifelot",
+     "desc": "Viva uma entre 8 bilhões de vidas"
+    }
+   }
+  },
+  {
+   "id": "kiripop",
+   "package": "com.nagilab.kiripop",
+   "public": false,
+   "icon": "",
+   "adult": false,
+   "langs": [
+    "ja",
+    "en",
+    "zh-Hans",
+    "es",
+    "ar",
+    "fr",
+    "pt-BR"
+   ],
+   "store": "https://play.google.com/store/apps/details?id=com.nagilab.kiripop",
+   "text": {
+    "ja": {
+     "name": "Kiripop",
+     "desc": "写真からステッカーを作る"
+    },
+    "en": {
+     "name": "Kiripop",
+     "desc": "Turn photos into stickers"
+    },
+    "zh-Hans": {
+     "name": "Kiripop",
+     "desc": "把照片变成贴纸"
+    },
+    "es": {
+     "name": "Kiripop",
+     "desc": "Convierte fotos en stickers"
+    },
+    "ar": {
+     "name": "Kiripop",
+     "desc": "حوّل صورك إلى ملصقات"
+    },
+    "fr": {
+     "name": "Kiripop",
+     "desc": "Transformez vos photos en stickers"
+    },
+    "pt-BR": {
+     "name": "Kiripop",
+     "desc": "Transforme fotos em figurinhas"
+    }
+   }
+  },
+  {
+   "id": "yoikagen",
+   "package": "com.nagilab.yoikagen",
+   "public": false,
+   "icon": "",
+   "adult": false,
+   "langs": [
+    "ja",
+    "en",
+    "zh-Hans",
+    "es",
+    "ar",
+    "fr",
+    "pt-BR"
+   ],
+   "store": "https://play.google.com/store/apps/details?id=com.nagilab.yoikagen",
+   "text": {
+    "ja": {
+     "name": "よいかげん",
+     "desc": "お酒を減らして浮いたお金が見える"
+    },
+    "en": {
+     "name": "Yoikagen",
+     "desc": "Drink less, see what you save"
+    },
+    "zh-Hans": {
+     "name": "Yoikagen",
+     "desc": "少喝酒，看见省下的钱"
+    },
+    "es": {
+     "name": "Yoikagen",
+     "desc": "Bebe menos y ve lo que ahorras"
+    },
+    "ar": {
+     "name": "Yoikagen",
+     "desc": "اشرب أقل وشاهد ما توفّره"
+    },
+    "fr": {
+     "name": "Yoikagen",
+     "desc": "Buvez moins, voyez vos économies"
+    },
+    "pt-BR": {
+     "name": "Yoikagen",
+     "desc": "Beba menos e veja quanto economiza"
+    }
+   }
+  },
+  {
+   "id": "focuspet",
+   "package": "com.nagilab.focuspet",
+   "public": false,
+   "icon": "",
+   "adult": false,
+   "langs": [
+    "ja",
+    "en",
+    "zh-Hans",
+    "es",
+    "ar",
+    "fr",
+    "pt-BR"
+   ],
+   "store": "https://play.google.com/store/apps/details?id=com.nagilab.focuspet",
+   "text": {
+    "ja": {
+     "name": "集中ペット",
+     "desc": "集中するとペットが育つ"
+    },
+    "en": {
+     "name": "Focus Pet",
+     "desc": "Stay focused, grow your pet"
+    },
+    "zh-Hans": {
+     "name": "专注宠物",
+     "desc": "专注就能养大宠物"
+    },
+    "es": {
+     "name": "Focus Pet",
+     "desc": "Concéntrate y cría tu mascota"
+    },
+    "ar": {
+     "name": "Focus Pet",
+     "desc": "ركّز وربِّ حيوانك الأليف"
+    },
+    "fr": {
+     "name": "Focus Pet",
+     "desc": "Concentrez-vous, faites grandir votre animal"
+    },
+    "pt-BR": {
+     "name": "Focus Pet",
+     "desc": "Foque e crie seu pet"
+    }
+   }
+  },
+  {
+   "id": "koichat",
+   "package": "com.nagilab.koichat",
+   "public": false,
+   "icon": "",
+   "adult": true,
+   "langs": [
+    "ja",
+    "en",
+    "zh-Hans",
+    "es",
+    "ar",
+    "fr",
+    "pt-BR"
+   ],
+   "store": "https://play.google.com/store/apps/details?id=com.nagilab.koichat",
+   "text": {
+    "ja": {
+     "name": "KoiChat",
+     "desc": "AIの恋人とチャット"
+    },
+    "en": {
+     "name": "KoiChat",
+     "desc": "Chat with your AI crush"
+    },
+    "zh-Hans": {
+     "name": "KoiChat",
+     "desc": "与AI恋人聊天"
+    },
+    "es": {
+     "name": "KoiChat",
+     "desc": "Chatea con tu crush IA"
+    },
+    "ar": {
+     "name": "KoiChat",
+     "desc": "دردش مع حبيبك الافتراضي"
+    },
+    "fr": {
+     "name": "KoiChat",
+     "desc": "Discutez avec votre crush IA"
+    },
+    "pt-BR": {
+     "name": "KoiChat",
+     "desc": "Converse com seu crush de IA"
+    }
+   }
+  },
+  {
+   "id": "hima",
+   "package": "com.shshcode.hima",
+   "public": false,
+   "icon": "",
+   "adult": true,
+   "langs": [
+    "ja"
+   ],
+   "store": "https://play.google.com/store/apps/details?id=com.shshcode.hima",
+   "text": {
+    "ja": {
+     "name": "HIMA",
+     "desc": "ひまな今、話せる人とつながる"
+    }
+   }
+  }
+ ]
+}
