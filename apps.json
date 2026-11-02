@@ -1,11 +1,18 @@
 {
- "version": 1,
+ "version": 2,
  "updated": "2026-11-02",
  "rules": {
   "show_only_public": true,
   "adult_apps_only_from_adult_apps": true,
   "no_reward_for_install": true,
-  "fallback_lang": "en"
+  "fallback_lang": "en",
+  "xmission": {
+   "reward_in": "送客元のアプリ",
+   "goal_in": "送客先のアプリ(インストールだけでは渡さない・目標の到達が条件)",
+   "deeplink": "nagilab-<id>://xreward?from=<相手id>&t=<時刻>&sig=<HMAC>",
+   "once_per_pair": true,
+   "no_review_or_rating_incentive": true
+  }
  },
  "apps": [
   {
@@ -52,6 +59,18 @@
     "pt-BR": {
      "name": "Samurai Rogue",
      "desc": "Corte hordas infinitas de yokai"
+    }
+   },
+   "xmission": {
+    "event": "xmission_goal",
+    "text": {
+     "ja": "初めてのボス撃破",
+     "en": "Defeat your first boss",
+     "zh-Hans": "首次击败头目",
+     "es": "Derrota a tu primer jefe",
+     "ar": "اهزم أول زعيم",
+     "fr": "Battez votre premier boss",
+     "pt-BR": "Derrote seu primeiro chefe"
     }
    }
   },
@@ -100,6 +119,18 @@
      "name": "Yokai Mahjong",
      "desc": "Roguelite de mahjong com yokai"
     }
+   },
+   "xmission": {
+    "event": "xmission_goal",
+    "text": {
+     "ja": "1回目の勝負に勝つ",
+     "en": "Win your first round",
+     "zh-Hans": "赢得第一局",
+     "es": "Gana tu primera ronda",
+     "ar": "افز بأول جولة",
+     "fr": "Gagnez votre première manche",
+     "pt-BR": "Vença sua primeira rodada"
+    }
    }
   },
   {
@@ -146,6 +177,18 @@
     "pt-BR": {
      "name": "Rumor High",
      "desc": "Simulador escolar movido a boatos"
+    }
+   },
+   "xmission": {
+    "event": "xmission_goal",
+    "text": {
+     "ja": "1週目を終える",
+     "en": "Finish your first week",
+     "zh-Hans": "完成第一周",
+     "es": "Termina tu primera semana",
+     "ar": "أنهِ أسبوعك الأول",
+     "fr": "Terminez votre première semaine",
+     "pt-BR": "Termine sua primeira semana"
     }
    }
   },
@@ -194,6 +237,18 @@
      "name": "Puzzle Matsuri",
      "desc": "6 quebra-cabeças + liga semanal"
     }
+   },
+   "xmission": {
+    "event": "xmission_goal",
+    "text": {
+     "ja": "10面クリア",
+     "en": "Clear 10 stages",
+     "zh-Hans": "通关10关",
+     "es": "Supera 10 niveles",
+     "ar": "أنهِ 10 مراحل",
+     "fr": "Terminez 10 niveaux",
+     "pt-BR": "Conclua 10 fases"
+    }
    }
   },
   {
@@ -240,6 +295,18 @@
     "pt-BR": {
      "name": "Lifelot",
      "desc": "Viva uma entre 8 bilhões de vidas"
+    }
+   },
+   "xmission": {
+    "event": "xmission_goal",
+    "text": {
+     "ja": "人生を1回終える",
+     "en": "Finish one life",
+     "zh-Hans": "走完一次人生",
+     "es": "Termina una vida",
+     "ar": "أكمل حياة واحدة",
+     "fr": "Terminez une vie",
+     "pt-BR": "Termine uma vida"
     }
    }
   },
@@ -288,6 +355,18 @@
      "name": "Kiripop",
      "desc": "Transforme fotos em figurinhas"
     }
+   },
+   "xmission": {
+    "event": "xmission_goal",
+    "text": {
+     "ja": "ステッカーを3枚作る",
+     "en": "Make 3 stickers",
+     "zh-Hans": "制作3张贴纸",
+     "es": "Crea 3 stickers",
+     "ar": "اصنع 3 ملصقات",
+     "fr": "Créez 3 stickers",
+     "pt-BR": "Crie 3 figurinhas"
+    }
    }
   },
   {
@@ -334,6 +413,18 @@
     "pt-BR": {
      "name": "Yoikagen",
      "desc": "Beba menos e veja quanto economiza"
+    }
+   },
+   "xmission": {
+    "event": "xmission_goal",
+    "text": {
+     "ja": "3日記録する",
+     "en": "Log 3 days",
+     "zh-Hans": "记录3天",
+     "es": "Registra 3 días",
+     "ar": "سجّل 3 أيام",
+     "fr": "Notez 3 jours",
+     "pt-BR": "Registre 3 dias"
     }
    }
   },
@@ -382,6 +473,18 @@
      "name": "Focus Pet",
      "desc": "Foque e crie seu pet"
     }
+   },
+   "xmission": {
+    "event": "xmission_goal",
+    "text": {
+     "ja": "25分集中を1回",
+     "en": "Complete one 25-min focus",
+     "zh-Hans": "完成一次25分钟专注",
+     "es": "Completa 25 min de enfoque",
+     "ar": "أكمل 25 دقيقة تركيز",
+     "fr": "Faites 25 min de concentration",
+     "pt-BR": "Complete 25 min de foco"
+    }
    }
   },
   {
@@ -429,6 +532,18 @@
      "name": "KoiChat",
      "desc": "Converse com seu crush de IA"
     }
+   },
+   "xmission": {
+    "event": "xmission_goal",
+    "text": {
+     "ja": "10通話す",
+     "en": "Send 10 messages",
+     "zh-Hans": "发送10条消息",
+     "es": "Envía 10 mensajes",
+     "ar": "أرسل 10 رسائل",
+     "fr": "Envoyez 10 messages",
+     "pt-BR": "Envie 10 mensagens"
+    }
    }
   },
   {
@@ -445,6 +560,13 @@
     "ja": {
      "name": "HIMA",
      "desc": "ひまな今、話せる人とつながる"
+    }
+   },
+   "xmission": {
+    "event": "xmission_goal",
+    "text": {
+     "ja": "1人と話す",
+     "en": "Chat with one person"
     }
    }
   }
