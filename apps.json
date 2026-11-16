@@ -1,6 +1,6 @@
 {
  "version": 2,
- "updated": "2026-11-02",
+ "updated": "2026-11-16",
  "rules": {
   "show_only_public": true,
   "adult_apps_only_from_adult_apps": true,
@@ -195,8 +195,8 @@
   {
    "id": "puzzlematsuri",
    "package": "com.nagilab.puzzlematsuri",
-   "public": false,
-   "icon": "",
+   "public": true,
+   "icon": "https://play-lh.googleusercontent.com/0vvz9O59FKCWxP_dwO91L_ECGLw_LNq-pzbH5gYzDb8I5oaTplvaaPhg7dhgHJ2yqG7WVSu7BqCm1mcckwOV=w240",
    "adult": false,
    "langs": [
     "ja",
@@ -254,8 +254,8 @@
   {
    "id": "lifelot",
    "package": "com.nagilab.lifelot",
-   "public": false,
-   "icon": "",
+   "public": true,
+   "icon": "https://play-lh.googleusercontent.com/0DxDFNWrdDM1sJPuAh7KcvF8y6cNohWYk3h4LzjenQsAj5NO1aWjTRdv_cBbY5pkjKyMZ-80UFTX2_rVKP_1WA=w240",
    "adult": false,
    "langs": [
     "ja",
