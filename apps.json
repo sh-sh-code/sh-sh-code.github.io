@@ -1,6 +1,6 @@
 {
  "version": 2,
- "updated": "2026-11-16",
+ "updated": "2026-11-20",
  "rules": {
   "show_only_public": true,
   "adult_apps_only_from_adult_apps": true,
@@ -59,6 +59,14 @@
     "pt-BR": {
      "name": "Samurai Rogue",
      "desc": "Corte hordas infinitas de yokai"
+    },
+    "th": {
+     "name": "Samurai Rogue",
+     "desc": "ฟันฝ่าฝูงโยไคที่ไม่มีวันหมด"
+    },
+    "vi": {
+     "name": "Samurai Rogue",
+     "desc": "Chém xuyên đàn yêu quái bất tận"
     }
    },
    "xmission": {
@@ -70,7 +78,9 @@
      "es": "Derrota a tu primer jefe",
      "ar": "اهزم أول زعيم",
      "fr": "Battez votre premier boss",
-     "pt-BR": "Derrote seu primeiro chefe"
+     "pt-BR": "Derrote seu primeiro chefe",
+     "th": "ล้มบอสตัวแรก",
+     "vi": "Hạ gục trùm đầu tiên"
     }
    }
   },
@@ -118,6 +128,14 @@
     "pt-BR": {
      "name": "Yokai Mahjong",
      "desc": "Roguelite de mahjong com yokai"
+    },
+    "th": {
+     "name": "Yokai Mahjong",
+     "desc": "ไพ่นกกระจอกแนวโร้กไลต์กับพวกพ้องโยไค"
+    },
+    "vi": {
+     "name": "Yokai Mahjong",
+     "desc": "Mạt chược roguelite cùng đồng đội yêu quái"
     }
    },
    "xmission": {
@@ -129,7 +147,9 @@
      "es": "Gana tu primera ronda",
      "ar": "افز بأول جولة",
      "fr": "Gagnez votre première manche",
-     "pt-BR": "Vença sua primeira rodada"
+     "pt-BR": "Vença sua primeira rodada",
+     "th": "ชนะรอบแรก",
+     "vi": "Thắng ván đầu tiên"
     }
    }
   },
@@ -177,6 +197,14 @@
     "pt-BR": {
      "name": "Rumor High",
      "desc": "Simulador escolar movido a boatos"
+    },
+    "th": {
+     "name": "Rumor High",
+     "desc": "เกมจำลองโรงเรียนที่ข่าวลือเป็นใหญ่"
+    },
+    "vi": {
+     "name": "Rumor High",
+     "desc": "Mô phỏng học đường nơi tin đồn làm chủ"
     }
    },
    "xmission": {
@@ -188,7 +216,9 @@
      "es": "Termina tu primera semana",
      "ar": "أنهِ أسبوعك الأول",
      "fr": "Terminez votre première semaine",
-     "pt-BR": "Termine sua primeira semana"
+     "pt-BR": "Termine sua primeira semana",
+     "th": "จบสัปดาห์แรก",
+     "vi": "Hoàn thành tuần đầu tiên"
     }
    }
   },
@@ -236,6 +266,14 @@
     "pt-BR": {
      "name": "Puzzle Matsuri",
      "desc": "6 quebra-cabeças + liga semanal"
+    },
+    "th": {
+     "name": "Puzzle Matsuri",
+     "desc": "เกมพัซเซิลยอดฮิต 6 เกม + ลีกประจำสัปดาห์"
+    },
+    "vi": {
+     "name": "Puzzle Matsuri",
+     "desc": "6 trò giải đố ăn khách + giải đấu hằng tuần"
     }
    },
    "xmission": {
@@ -247,7 +285,9 @@
      "es": "Supera 10 niveles",
      "ar": "أنهِ 10 مراحل",
      "fr": "Terminez 10 niveaux",
-     "pt-BR": "Conclua 10 fases"
+     "pt-BR": "Conclua 10 fases",
+     "th": "ผ่าน 10 ด่าน",
+     "vi": "Vượt qua 10 màn"
     }
    }
   },
@@ -264,7 +304,9 @@
     "es",
     "ar",
     "fr",
-    "pt-BR"
+    "pt-BR",
+    "th",
+    "vi"
    ],
    "store": "https://play.google.com/store/apps/details?id=com.nagilab.lifelot",
    "text": {
@@ -295,6 +337,14 @@
     "pt-BR": {
      "name": "Lifelot",
      "desc": "Viva uma entre 8 bilhões de vidas"
+    },
+    "th": {
+     "name": "Lifelot",
+     "desc": "ใช้ชีวิตหนึ่งใน 8 พันล้านชีวิต"
+    },
+    "vi": {
+     "name": "Lifelot",
+     "desc": "Sống một trong 8 tỷ cuộc đời"
     }
    },
    "xmission": {
@@ -306,7 +356,9 @@
      "es": "Termina una vida",
      "ar": "أكمل حياة واحدة",
      "fr": "Terminez une vie",
-     "pt-BR": "Termine uma vida"
+     "pt-BR": "Termine uma vida",
+     "th": "ใช้ชีวิตจนจบ 1 ครั้ง",
+     "vi": "Sống trọn một cuộc đời"
     }
    }
   },
