@@ -1,626 +1,626 @@
 {
- "version": 2,
- "updated": "2026-11-20",
- "rules": {
-  "show_only_public": true,
-  "adult_apps_only_from_adult_apps": true,
-  "no_reward_for_install": true,
-  "fallback_lang": "en",
-  "xmission": {
-   "reward_in": "送客元のアプリ",
-   "goal_in": "送客先のアプリ(インストールだけでは渡さない・目標の到達が条件)",
-   "deeplink": "nagilab-<id>://xreward?from=<相手id>&t=<時刻>&sig=<HMAC>",
-   "once_per_pair": true,
-   "no_review_or_rating_incentive": true
-  }
- },
- "apps": [
-  {
-   "id": "samurairogue",
-   "package": "com.nagilab.samurairogue",
-   "public": true,
-   "icon": "https://play-lh.googleusercontent.com/BoOy4vf3FZzRPJDIs8E8u_NyyEgxg32Qmp7OAvMOE9Sv1Y9HIj34zsbrndq61iNQVktgJN1yddhGI7vBHLVlkIc=w240",
-   "adult": false,
-   "langs": [
-    "ja",
-    "en",
-    "zh-Hans",
-    "es",
-    "ar",
-    "fr",
-    "pt-BR"
-   ],
-   "store": "https://play.google.com/store/apps/details?id=com.nagilab.samurairogue",
-   "text": {
-    "ja": {
-     "name": "侍ローグ 百鬼夜行",
-     "desc": "妖怪の群れを片手で斬り抜けろ"
-    },
-    "en": {
-     "name": "Samurai Rogue",
-     "desc": "Slash through endless yokai hordes"
-    },
-    "zh-Hans": {
-     "name": "武士肉鸽：百鬼夜行",
-     "desc": "单手斩尽妖怪大军"
-    },
-    "es": {
-     "name": "Samurai Rogue",
-     "desc": "Abre paso entre hordas de yokai"
-    },
-    "ar": {
-     "name": "ساموراي روغ",
-     "desc": "اشقّ طريقك عبر جحافل اليوكاي"
-    },
-    "fr": {
-     "name": "Samurai Rogue",
-     "desc": "Tranchez des hordes de yokai"
-    },
-    "pt-BR": {
-     "name": "Samurai Rogue",
-     "desc": "Corte hordas infinitas de yokai"
-    },
-    "th": {
-     "name": "Samurai Rogue",
-     "desc": "ฟันฝ่าฝูงโยไคที่ไม่มีวันหมด"
-    },
-    "vi": {
-     "name": "Samurai Rogue",
-     "desc": "Chém xuyên đàn yêu quái bất tận"
+  "version": 2,
+  "updated": "2026-11-21",
+  "rules": {
+    "show_only_public": true,
+    "adult_apps_only_from_adult_apps": true,
+    "no_reward_for_install": true,
+    "fallback_lang": "en",
+    "xmission": {
+      "reward_in": "送客元のアプリ",
+      "goal_in": "送客先のアプリ(インストールだけでは渡さない・目標の到達が条件)",
+      "deeplink": "nagilab-<id>://xreward?from=<相手id>&t=<時刻>&sig=<HMAC>",
+      "once_per_pair": true,
+      "no_review_or_rating_incentive": true
     }
-   },
-   "xmission": {
-    "event": "xmission_goal",
-    "text": {
-     "ja": "初めてのボス撃破",
-     "en": "Defeat your first boss",
-     "zh-Hans": "首次击败头目",
-     "es": "Derrota a tu primer jefe",
-     "ar": "اهزم أول زعيم",
-     "fr": "Battez votre premier boss",
-     "pt-BR": "Derrote seu primeiro chefe",
-     "th": "ล้มบอสตัวแรก",
-     "vi": "Hạ gục trùm đầu tiên"
-    }
-   }
   },
-  {
-   "id": "yokaimahjong",
-   "package": "com.nagilab.yokaimahjong",
-   "public": true,
-   "icon": "https://play-lh.googleusercontent.com/rzSDczrvKkH4KBbkFtkCK7SdgMm9Pw1upT59jzO3EnuQujCcs2zI13lrTH7WKhTWlYie4c-cLJVi5e0NzFBl=w240",
-   "adult": false,
-   "langs": [
-    "ja",
-    "en",
-    "zh-Hans",
-    "es",
-    "ar",
-    "fr",
-    "pt-BR"
-   ],
-   "store": "https://play.google.com/store/apps/details?id=com.nagilab.yokaimahjong",
-   "text": {
-    "ja": {
-     "name": "百鬼雀",
-     "desc": "妖怪と組む麻雀ローグライト"
+  "apps": [
+    {
+      "id": "puzzlematsuri",
+      "package": "com.nagilab.puzzlematsuri",
+      "public": true,
+      "icon": "https://play-lh.googleusercontent.com/0vvz9O59FKCWxP_dwO91L_ECGLw_LNq-pzbH5gYzDb8I5oaTplvaaPhg7dhgHJ2yqG7WVSu7BqCm1mcckwOV=w240",
+      "adult": false,
+      "langs": [
+        "ja",
+        "en",
+        "zh-Hans",
+        "es",
+        "ar",
+        "fr",
+        "pt-BR"
+      ],
+      "store": "https://play.google.com/store/apps/details?id=com.nagilab.puzzlematsuri",
+      "text": {
+        "ja": {
+          "name": "Puzzle Matsuri",
+          "desc": "人気パズル6本と週のリーグ"
+        },
+        "en": {
+          "name": "Puzzle Matsuri",
+          "desc": "6 hit puzzles + weekly league"
+        },
+        "zh-Hans": {
+          "name": "Puzzle Matsuri",
+          "desc": "6款热门益智+每周联赛"
+        },
+        "es": {
+          "name": "Puzzle Matsuri",
+          "desc": "6 puzzles + liga semanal"
+        },
+        "ar": {
+          "name": "Puzzle Matsuri",
+          "desc": "6 ألغاز + دوري أسبوعي"
+        },
+        "fr": {
+          "name": "Puzzle Matsuri",
+          "desc": "6 puzzles + ligue hebdo"
+        },
+        "pt-BR": {
+          "name": "Puzzle Matsuri",
+          "desc": "6 quebra-cabeças + liga semanal"
+        },
+        "th": {
+          "name": "Puzzle Matsuri",
+          "desc": "เกมพัซเซิลยอดฮิต 6 เกม + ลีกประจำสัปดาห์"
+        },
+        "vi": {
+          "name": "Puzzle Matsuri",
+          "desc": "6 trò giải đố ăn khách + giải đấu hằng tuần"
+        }
+      },
+      "xmission": {
+        "event": "xmission_goal",
+        "text": {
+          "ja": "10面クリア",
+          "en": "Clear 10 stages",
+          "zh-Hans": "通关10关",
+          "es": "Supera 10 niveles",
+          "ar": "أنهِ 10 مراحل",
+          "fr": "Terminez 10 niveaux",
+          "pt-BR": "Conclua 10 fases",
+          "th": "ผ่าน 10 ด่าน",
+          "vi": "Vượt qua 10 màn"
+        }
+      }
     },
-    "en": {
-     "name": "Yokai Mahjong",
-     "desc": "Mahjong roguelite with yokai allies"
+    {
+      "id": "rumorhigh",
+      "package": "com.nagilab.rumorhigh",
+      "public": true,
+      "icon": "https://play-lh.googleusercontent.com/Vxvl-EuXNR4BhmEVi7ag6Pos8H-Nt5TVV3WrynmgA0hKA-plDgt-CEi2Z2okYbjKPlmAx1XfjnnuItt384wn=w240",
+      "adult": false,
+      "langs": [
+        "ja",
+        "en",
+        "zh-Hans",
+        "es",
+        "ar",
+        "fr",
+        "pt-BR"
+      ],
+      "store": "https://play.google.com/store/apps/details?id=com.nagilab.rumorhigh",
+      "text": {
+        "ja": {
+          "name": "Rumor High",
+          "desc": "うわさで動く学園シミュレーター"
+        },
+        "en": {
+          "name": "Rumor High",
+          "desc": "A school sim where rumors rule"
+        },
+        "zh-Hans": {
+          "name": "Rumor High",
+          "desc": "传闻主宰的校园模拟"
+        },
+        "es": {
+          "name": "Rumor High",
+          "desc": "Simulador escolar movido por rumores"
+        },
+        "ar": {
+          "name": "Rumor High",
+          "desc": "محاكاة مدرسية تحكمها الشائعات"
+        },
+        "fr": {
+          "name": "Rumor High",
+          "desc": "Simulation scolaire régie par les rumeurs"
+        },
+        "pt-BR": {
+          "name": "Rumor High",
+          "desc": "Simulador escolar movido a boatos"
+        },
+        "th": {
+          "name": "Rumor High",
+          "desc": "เกมจำลองโรงเรียนที่ข่าวลือเป็นใหญ่"
+        },
+        "vi": {
+          "name": "Rumor High",
+          "desc": "Mô phỏng học đường nơi tin đồn làm chủ"
+        }
+      },
+      "xmission": {
+        "event": "xmission_goal",
+        "text": {
+          "ja": "1週目を終える",
+          "en": "Finish your first week",
+          "zh-Hans": "完成第一周",
+          "es": "Termina tu primera semana",
+          "ar": "أنهِ أسبوعك الأول",
+          "fr": "Terminez votre première semaine",
+          "pt-BR": "Termine sua primeira semana",
+          "th": "จบสัปดาห์แรก",
+          "vi": "Hoàn thành tuần đầu tiên"
+        }
+      }
     },
-    "zh-Hans": {
-     "name": "百鬼雀",
-     "desc": "与妖怪联手的麻将肉鸽"
+    {
+      "id": "lifelot",
+      "package": "com.nagilab.lifelot",
+      "public": true,
+      "icon": "https://play-lh.googleusercontent.com/0DxDFNWrdDM1sJPuAh7KcvF8y6cNohWYk3h4LzjenQsAj5NO1aWjTRdv_cBbY5pkjKyMZ-80UFTX2_rVKP_1WA=w240",
+      "adult": false,
+      "langs": [
+        "ja",
+        "en",
+        "zh-Hans",
+        "es",
+        "ar",
+        "fr",
+        "pt-BR",
+        "th",
+        "vi"
+      ],
+      "store": "https://play.google.com/store/apps/details?id=com.nagilab.lifelot",
+      "text": {
+        "ja": {
+          "name": "Lifelot",
+          "desc": "80億分の1の人生を生きる"
+        },
+        "en": {
+          "name": "Lifelot",
+          "desc": "Live one of 8 billion lives"
+        },
+        "zh-Hans": {
+          "name": "Lifelot",
+          "desc": "体验80亿分之一的人生"
+        },
+        "es": {
+          "name": "Lifelot",
+          "desc": "Vive una de 8 mil millones de vidas"
+        },
+        "ar": {
+          "name": "Lifelot",
+          "desc": "عِش حياة واحدة من 8 مليارات"
+        },
+        "fr": {
+          "name": "Lifelot",
+          "desc": "Vivez une vie parmi 8 milliards"
+        },
+        "pt-BR": {
+          "name": "Lifelot",
+          "desc": "Viva uma entre 8 bilhões de vidas"
+        },
+        "th": {
+          "name": "Lifelot",
+          "desc": "ใช้ชีวิตหนึ่งใน 8 พันล้านชีวิต"
+        },
+        "vi": {
+          "name": "Lifelot",
+          "desc": "Sống một trong 8 tỷ cuộc đời"
+        }
+      },
+      "xmission": {
+        "event": "xmission_goal",
+        "text": {
+          "ja": "人生を1回終える",
+          "en": "Finish one life",
+          "zh-Hans": "走完一次人生",
+          "es": "Termina una vida",
+          "ar": "أكمل حياة واحدة",
+          "fr": "Terminez une vie",
+          "pt-BR": "Termine uma vida",
+          "th": "ใช้ชีวิตจนจบ 1 ครั้ง",
+          "vi": "Sống trọn một cuộc đời"
+        }
+      }
     },
-    "es": {
-     "name": "Yokai Mahjong",
-     "desc": "Roguelite de mahjong con yokai"
+    {
+      "id": "samurairogue",
+      "package": "com.nagilab.samurairogue",
+      "public": true,
+      "icon": "https://play-lh.googleusercontent.com/BoOy4vf3FZzRPJDIs8E8u_NyyEgxg32Qmp7OAvMOE9Sv1Y9HIj34zsbrndq61iNQVktgJN1yddhGI7vBHLVlkIc=w240",
+      "adult": false,
+      "langs": [
+        "ja",
+        "en",
+        "zh-Hans",
+        "es",
+        "ar",
+        "fr",
+        "pt-BR"
+      ],
+      "store": "https://play.google.com/store/apps/details?id=com.nagilab.samurairogue",
+      "text": {
+        "ja": {
+          "name": "侍ローグ 百鬼夜行",
+          "desc": "妖怪の群れを片手で斬り抜けろ"
+        },
+        "en": {
+          "name": "Samurai Rogue",
+          "desc": "Slash through endless yokai hordes"
+        },
+        "zh-Hans": {
+          "name": "武士肉鸽：百鬼夜行",
+          "desc": "单手斩尽妖怪大军"
+        },
+        "es": {
+          "name": "Samurai Rogue",
+          "desc": "Abre paso entre hordas de yokai"
+        },
+        "ar": {
+          "name": "ساموراي روغ",
+          "desc": "اشقّ طريقك عبر جحافل اليوكاي"
+        },
+        "fr": {
+          "name": "Samurai Rogue",
+          "desc": "Tranchez des hordes de yokai"
+        },
+        "pt-BR": {
+          "name": "Samurai Rogue",
+          "desc": "Corte hordas infinitas de yokai"
+        },
+        "th": {
+          "name": "Samurai Rogue",
+          "desc": "ฟันฝ่าฝูงโยไคที่ไม่มีวันหมด"
+        },
+        "vi": {
+          "name": "Samurai Rogue",
+          "desc": "Chém xuyên đàn yêu quái bất tận"
+        }
+      },
+      "xmission": {
+        "event": "xmission_goal",
+        "text": {
+          "ja": "初めてのボス撃破",
+          "en": "Defeat your first boss",
+          "zh-Hans": "首次击败头目",
+          "es": "Derrota a tu primer jefe",
+          "ar": "اهزم أول زعيم",
+          "fr": "Battez votre premier boss",
+          "pt-BR": "Derrote seu primeiro chefe",
+          "th": "ล้มบอสตัวแรก",
+          "vi": "Hạ gục trùm đầu tiên"
+        }
+      }
     },
-    "ar": {
-     "name": "ماهجونغ اليوكاي",
-     "desc": "ماهجونغ روغلايت مع حلفاء اليوكاي"
+    {
+      "id": "yokaimahjong",
+      "package": "com.nagilab.yokaimahjong",
+      "public": true,
+      "icon": "https://play-lh.googleusercontent.com/rzSDczrvKkH4KBbkFtkCK7SdgMm9Pw1upT59jzO3EnuQujCcs2zI13lrTH7WKhTWlYie4c-cLJVi5e0NzFBl=w240",
+      "adult": false,
+      "langs": [
+        "ja",
+        "en",
+        "zh-Hans",
+        "es",
+        "ar",
+        "fr",
+        "pt-BR"
+      ],
+      "store": "https://play.google.com/store/apps/details?id=com.nagilab.yokaimahjong",
+      "text": {
+        "ja": {
+          "name": "百鬼雀",
+          "desc": "妖怪と組む麻雀ローグライト"
+        },
+        "en": {
+          "name": "Yokai Mahjong",
+          "desc": "Mahjong roguelite with yokai allies"
+        },
+        "zh-Hans": {
+          "name": "百鬼雀",
+          "desc": "与妖怪联手的麻将肉鸽"
+        },
+        "es": {
+          "name": "Yokai Mahjong",
+          "desc": "Roguelite de mahjong con yokai"
+        },
+        "ar": {
+          "name": "ماهجونغ اليوكاي",
+          "desc": "ماهجونغ روغلايت مع حلفاء اليوكاي"
+        },
+        "fr": {
+          "name": "Yokai Mahjong",
+          "desc": "Roguelite mahjong avec des yokai"
+        },
+        "pt-BR": {
+          "name": "Yokai Mahjong",
+          "desc": "Roguelite de mahjong com yokai"
+        },
+        "th": {
+          "name": "Yokai Mahjong",
+          "desc": "ไพ่นกกระจอกแนวโร้กไลต์กับพวกพ้องโยไค"
+        },
+        "vi": {
+          "name": "Yokai Mahjong",
+          "desc": "Mạt chược roguelite cùng đồng đội yêu quái"
+        }
+      },
+      "xmission": {
+        "event": "xmission_goal",
+        "text": {
+          "ja": "1回目の勝負に勝つ",
+          "en": "Win your first round",
+          "zh-Hans": "赢得第一局",
+          "es": "Gana tu primera ronda",
+          "ar": "افز بأول جولة",
+          "fr": "Gagnez votre première manche",
+          "pt-BR": "Vença sua primeira rodada",
+          "th": "ชนะรอบแรก",
+          "vi": "Thắng ván đầu tiên"
+        }
+      }
     },
-    "fr": {
-     "name": "Yokai Mahjong",
-     "desc": "Roguelite mahjong avec des yokai"
+    {
+      "id": "kiripop",
+      "package": "com.nagilab.kiripop",
+      "public": false,
+      "icon": "",
+      "adult": false,
+      "langs": [
+        "ja",
+        "en",
+        "zh-Hans",
+        "es",
+        "ar",
+        "fr",
+        "pt-BR"
+      ],
+      "store": "https://play.google.com/store/apps/details?id=com.nagilab.kiripop",
+      "text": {
+        "ja": {
+          "name": "Kiripop",
+          "desc": "写真からステッカーを作る"
+        },
+        "en": {
+          "name": "Kiripop",
+          "desc": "Turn photos into stickers"
+        },
+        "zh-Hans": {
+          "name": "Kiripop",
+          "desc": "把照片变成贴纸"
+        },
+        "es": {
+          "name": "Kiripop",
+          "desc": "Convierte fotos en stickers"
+        },
+        "ar": {
+          "name": "Kiripop",
+          "desc": "حوّل صورك إلى ملصقات"
+        },
+        "fr": {
+          "name": "Kiripop",
+          "desc": "Transformez vos photos en stickers"
+        },
+        "pt-BR": {
+          "name": "Kiripop",
+          "desc": "Transforme fotos em figurinhas"
+        }
+      },
+      "xmission": {
+        "event": "xmission_goal",
+        "text": {
+          "ja": "ステッカーを3枚作る",
+          "en": "Make 3 stickers",
+          "zh-Hans": "制作3张贴纸",
+          "es": "Crea 3 stickers",
+          "ar": "اصنع 3 ملصقات",
+          "fr": "Créez 3 stickers",
+          "pt-BR": "Crie 3 figurinhas"
+        }
+      }
     },
-    "pt-BR": {
-     "name": "Yokai Mahjong",
-     "desc": "Roguelite de mahjong com yokai"
+    {
+      "id": "yoikagen",
+      "package": "com.nagilab.yoikagen",
+      "public": false,
+      "icon": "",
+      "adult": false,
+      "langs": [
+        "ja",
+        "en",
+        "zh-Hans",
+        "es",
+        "ar",
+        "fr",
+        "pt-BR"
+      ],
+      "store": "https://play.google.com/store/apps/details?id=com.nagilab.yoikagen",
+      "text": {
+        "ja": {
+          "name": "よいかげん",
+          "desc": "お酒を減らして浮いたお金が見える"
+        },
+        "en": {
+          "name": "Yoikagen",
+          "desc": "Drink less, see what you save"
+        },
+        "zh-Hans": {
+          "name": "Yoikagen",
+          "desc": "少喝酒，看见省下的钱"
+        },
+        "es": {
+          "name": "Yoikagen",
+          "desc": "Bebe menos y ve lo que ahorras"
+        },
+        "ar": {
+          "name": "Yoikagen",
+          "desc": "اشرب أقل وشاهد ما توفّره"
+        },
+        "fr": {
+          "name": "Yoikagen",
+          "desc": "Buvez moins, voyez vos économies"
+        },
+        "pt-BR": {
+          "name": "Yoikagen",
+          "desc": "Beba menos e veja quanto economiza"
+        }
+      },
+      "xmission": {
+        "event": "xmission_goal",
+        "text": {
+          "ja": "3日記録する",
+          "en": "Log 3 days",
+          "zh-Hans": "记录3天",
+          "es": "Registra 3 días",
+          "ar": "سجّل 3 أيام",
+          "fr": "Notez 3 jours",
+          "pt-BR": "Registre 3 dias"
+        }
+      }
     },
-    "th": {
-     "name": "Yokai Mahjong",
-     "desc": "ไพ่นกกระจอกแนวโร้กไลต์กับพวกพ้องโยไค"
+    {
+      "id": "focuspet",
+      "package": "com.nagilab.focuspet",
+      "public": false,
+      "icon": "",
+      "adult": false,
+      "langs": [
+        "ja",
+        "en",
+        "zh-Hans",
+        "es",
+        "ar",
+        "fr",
+        "pt-BR"
+      ],
+      "store": "https://play.google.com/store/apps/details?id=com.nagilab.focuspet",
+      "text": {
+        "ja": {
+          "name": "集中ペット",
+          "desc": "集中するとペットが育つ"
+        },
+        "en": {
+          "name": "Focus Pet",
+          "desc": "Stay focused, grow your pet"
+        },
+        "zh-Hans": {
+          "name": "专注宠物",
+          "desc": "专注就能养大宠物"
+        },
+        "es": {
+          "name": "Focus Pet",
+          "desc": "Concéntrate y cría tu mascota"
+        },
+        "ar": {
+          "name": "Focus Pet",
+          "desc": "ركّز وربِّ حيوانك الأليف"
+        },
+        "fr": {
+          "name": "Focus Pet",
+          "desc": "Concentrez-vous, faites grandir votre animal"
+        },
+        "pt-BR": {
+          "name": "Focus Pet",
+          "desc": "Foque e crie seu pet"
+        }
+      },
+      "xmission": {
+        "event": "xmission_goal",
+        "text": {
+          "ja": "25分集中を1回",
+          "en": "Complete one 25-min focus",
+          "zh-Hans": "完成一次25分钟专注",
+          "es": "Completa 25 min de enfoque",
+          "ar": "أكمل 25 دقيقة تركيز",
+          "fr": "Faites 25 min de concentration",
+          "pt-BR": "Complete 25 min de foco"
+        }
+      }
     },
-    "vi": {
-     "name": "Yokai Mahjong",
-     "desc": "Mạt chược roguelite cùng đồng đội yêu quái"
+    {
+      "id": "koichat",
+      "package": "com.nagilab.koichat",
+      "public": false,
+      "icon": "",
+      "adult": true,
+      "langs": [
+        "ja",
+        "en",
+        "zh-Hans",
+        "es",
+        "ar",
+        "fr",
+        "pt-BR"
+      ],
+      "store": "https://play.google.com/store/apps/details?id=com.nagilab.koichat",
+      "text": {
+        "ja": {
+          "name": "KoiChat",
+          "desc": "AIの恋人とチャット"
+        },
+        "en": {
+          "name": "KoiChat",
+          "desc": "Chat with your AI crush"
+        },
+        "zh-Hans": {
+          "name": "KoiChat",
+          "desc": "与AI恋人聊天"
+        },
+        "es": {
+          "name": "KoiChat",
+          "desc": "Chatea con tu crush IA"
+        },
+        "ar": {
+          "name": "KoiChat",
+          "desc": "دردش مع حبيبك الافتراضي"
+        },
+        "fr": {
+          "name": "KoiChat",
+          "desc": "Discutez avec votre crush IA"
+        },
+        "pt-BR": {
+          "name": "KoiChat",
+          "desc": "Converse com seu crush de IA"
+        }
+      },
+      "xmission": {
+        "event": "xmission_goal",
+        "text": {
+          "ja": "10通話す",
+          "en": "Send 10 messages",
+          "zh-Hans": "发送10条消息",
+          "es": "Envía 10 mensajes",
+          "ar": "أرسل 10 رسائل",
+          "fr": "Envoyez 10 messages",
+          "pt-BR": "Envie 10 mensagens"
+        }
+      }
+    },
+    {
+      "id": "hima",
+      "package": "com.shshcode.hima",
+      "public": false,
+      "icon": "",
+      "adult": true,
+      "langs": [
+        "ja"
+      ],
+      "store": "https://play.google.com/store/apps/details?id=com.shshcode.hima",
+      "text": {
+        "ja": {
+          "name": "HIMA",
+          "desc": "ひまな今、話せる人とつながる"
+        }
+      },
+      "xmission": {
+        "event": "xmission_goal",
+        "text": {
+          "ja": "1人と話す",
+          "en": "Chat with one person"
+        }
+      }
     }
-   },
-   "xmission": {
-    "event": "xmission_goal",
-    "text": {
-     "ja": "1回目の勝負に勝つ",
-     "en": "Win your first round",
-     "zh-Hans": "赢得第一局",
-     "es": "Gana tu primera ronda",
-     "ar": "افز بأول جولة",
-     "fr": "Gagnez votre première manche",
-     "pt-BR": "Vença sua primeira rodada",
-     "th": "ชนะรอบแรก",
-     "vi": "Thắng ván đầu tiên"
-    }
-   }
-  },
-  {
-   "id": "rumorhigh",
-   "package": "com.nagilab.rumorhigh",
-   "public": true,
-   "icon": "https://play-lh.googleusercontent.com/Vxvl-EuXNR4BhmEVi7ag6Pos8H-Nt5TVV3WrynmgA0hKA-plDgt-CEi2Z2okYbjKPlmAx1XfjnnuItt384wn=w240",
-   "adult": false,
-   "langs": [
-    "ja",
-    "en",
-    "zh-Hans",
-    "es",
-    "ar",
-    "fr",
-    "pt-BR"
-   ],
-   "store": "https://play.google.com/store/apps/details?id=com.nagilab.rumorhigh",
-   "text": {
-    "ja": {
-     "name": "Rumor High",
-     "desc": "うわさで動く学園シミュレーター"
-    },
-    "en": {
-     "name": "Rumor High",
-     "desc": "A school sim where rumors rule"
-    },
-    "zh-Hans": {
-     "name": "Rumor High",
-     "desc": "传闻主宰的校园模拟"
-    },
-    "es": {
-     "name": "Rumor High",
-     "desc": "Simulador escolar movido por rumores"
-    },
-    "ar": {
-     "name": "Rumor High",
-     "desc": "محاكاة مدرسية تحكمها الشائعات"
-    },
-    "fr": {
-     "name": "Rumor High",
-     "desc": "Simulation scolaire régie par les rumeurs"
-    },
-    "pt-BR": {
-     "name": "Rumor High",
-     "desc": "Simulador escolar movido a boatos"
-    },
-    "th": {
-     "name": "Rumor High",
-     "desc": "เกมจำลองโรงเรียนที่ข่าวลือเป็นใหญ่"
-    },
-    "vi": {
-     "name": "Rumor High",
-     "desc": "Mô phỏng học đường nơi tin đồn làm chủ"
-    }
-   },
-   "xmission": {
-    "event": "xmission_goal",
-    "text": {
-     "ja": "1週目を終える",
-     "en": "Finish your first week",
-     "zh-Hans": "完成第一周",
-     "es": "Termina tu primera semana",
-     "ar": "أنهِ أسبوعك الأول",
-     "fr": "Terminez votre première semaine",
-     "pt-BR": "Termine sua primeira semana",
-     "th": "จบสัปดาห์แรก",
-     "vi": "Hoàn thành tuần đầu tiên"
-    }
-   }
-  },
-  {
-   "id": "puzzlematsuri",
-   "package": "com.nagilab.puzzlematsuri",
-   "public": true,
-   "icon": "https://play-lh.googleusercontent.com/0vvz9O59FKCWxP_dwO91L_ECGLw_LNq-pzbH5gYzDb8I5oaTplvaaPhg7dhgHJ2yqG7WVSu7BqCm1mcckwOV=w240",
-   "adult": false,
-   "langs": [
-    "ja",
-    "en",
-    "zh-Hans",
-    "es",
-    "ar",
-    "fr",
-    "pt-BR"
-   ],
-   "store": "https://play.google.com/store/apps/details?id=com.nagilab.puzzlematsuri",
-   "text": {
-    "ja": {
-     "name": "Puzzle Matsuri",
-     "desc": "人気パズル6本と週のリーグ"
-    },
-    "en": {
-     "name": "Puzzle Matsuri",
-     "desc": "6 hit puzzles + weekly league"
-    },
-    "zh-Hans": {
-     "name": "Puzzle Matsuri",
-     "desc": "6款热门益智+每周联赛"
-    },
-    "es": {
-     "name": "Puzzle Matsuri",
-     "desc": "6 puzzles + liga semanal"
-    },
-    "ar": {
-     "name": "Puzzle Matsuri",
-     "desc": "6 ألغاز + دوري أسبوعي"
-    },
-    "fr": {
-     "name": "Puzzle Matsuri",
-     "desc": "6 puzzles + ligue hebdo"
-    },
-    "pt-BR": {
-     "name": "Puzzle Matsuri",
-     "desc": "6 quebra-cabeças + liga semanal"
-    },
-    "th": {
-     "name": "Puzzle Matsuri",
-     "desc": "เกมพัซเซิลยอดฮิต 6 เกม + ลีกประจำสัปดาห์"
-    },
-    "vi": {
-     "name": "Puzzle Matsuri",
-     "desc": "6 trò giải đố ăn khách + giải đấu hằng tuần"
-    }
-   },
-   "xmission": {
-    "event": "xmission_goal",
-    "text": {
-     "ja": "10面クリア",
-     "en": "Clear 10 stages",
-     "zh-Hans": "通关10关",
-     "es": "Supera 10 niveles",
-     "ar": "أنهِ 10 مراحل",
-     "fr": "Terminez 10 niveaux",
-     "pt-BR": "Conclua 10 fases",
-     "th": "ผ่าน 10 ด่าน",
-     "vi": "Vượt qua 10 màn"
-    }
-   }
-  },
-  {
-   "id": "lifelot",
-   "package": "com.nagilab.lifelot",
-   "public": true,
-   "icon": "https://play-lh.googleusercontent.com/0DxDFNWrdDM1sJPuAh7KcvF8y6cNohWYk3h4LzjenQsAj5NO1aWjTRdv_cBbY5pkjKyMZ-80UFTX2_rVKP_1WA=w240",
-   "adult": false,
-   "langs": [
-    "ja",
-    "en",
-    "zh-Hans",
-    "es",
-    "ar",
-    "fr",
-    "pt-BR",
-    "th",
-    "vi"
-   ],
-   "store": "https://play.google.com/store/apps/details?id=com.nagilab.lifelot",
-   "text": {
-    "ja": {
-     "name": "Lifelot",
-     "desc": "80億分の1の人生を生きる"
-    },
-    "en": {
-     "name": "Lifelot",
-     "desc": "Live one of 8 billion lives"
-    },
-    "zh-Hans": {
-     "name": "Lifelot",
-     "desc": "体验80亿分之一的人生"
-    },
-    "es": {
-     "name": "Lifelot",
-     "desc": "Vive una de 8 mil millones de vidas"
-    },
-    "ar": {
-     "name": "Lifelot",
-     "desc": "عِش حياة واحدة من 8 مليارات"
-    },
-    "fr": {
-     "name": "Lifelot",
-     "desc": "Vivez une vie parmi 8 milliards"
-    },
-    "pt-BR": {
-     "name": "Lifelot",
-     "desc": "Viva uma entre 8 bilhões de vidas"
-    },
-    "th": {
-     "name": "Lifelot",
-     "desc": "ใช้ชีวิตหนึ่งใน 8 พันล้านชีวิต"
-    },
-    "vi": {
-     "name": "Lifelot",
-     "desc": "Sống một trong 8 tỷ cuộc đời"
-    }
-   },
-   "xmission": {
-    "event": "xmission_goal",
-    "text": {
-     "ja": "人生を1回終える",
-     "en": "Finish one life",
-     "zh-Hans": "走完一次人生",
-     "es": "Termina una vida",
-     "ar": "أكمل حياة واحدة",
-     "fr": "Terminez une vie",
-     "pt-BR": "Termine uma vida",
-     "th": "ใช้ชีวิตจนจบ 1 ครั้ง",
-     "vi": "Sống trọn một cuộc đời"
-    }
-   }
-  },
-  {
-   "id": "kiripop",
-   "package": "com.nagilab.kiripop",
-   "public": false,
-   "icon": "",
-   "adult": false,
-   "langs": [
-    "ja",
-    "en",
-    "zh-Hans",
-    "es",
-    "ar",
-    "fr",
-    "pt-BR"
-   ],
-   "store": "https://play.google.com/store/apps/details?id=com.nagilab.kiripop",
-   "text": {
-    "ja": {
-     "name": "Kiripop",
-     "desc": "写真からステッカーを作る"
-    },
-    "en": {
-     "name": "Kiripop",
-     "desc": "Turn photos into stickers"
-    },
-    "zh-Hans": {
-     "name": "Kiripop",
-     "desc": "把照片变成贴纸"
-    },
-    "es": {
-     "name": "Kiripop",
-     "desc": "Convierte fotos en stickers"
-    },
-    "ar": {
-     "name": "Kiripop",
-     "desc": "حوّل صورك إلى ملصقات"
-    },
-    "fr": {
-     "name": "Kiripop",
-     "desc": "Transformez vos photos en stickers"
-    },
-    "pt-BR": {
-     "name": "Kiripop",
-     "desc": "Transforme fotos em figurinhas"
-    }
-   },
-   "xmission": {
-    "event": "xmission_goal",
-    "text": {
-     "ja": "ステッカーを3枚作る",
-     "en": "Make 3 stickers",
-     "zh-Hans": "制作3张贴纸",
-     "es": "Crea 3 stickers",
-     "ar": "اصنع 3 ملصقات",
-     "fr": "Créez 3 stickers",
-     "pt-BR": "Crie 3 figurinhas"
-    }
-   }
-  },
-  {
-   "id": "yoikagen",
-   "package": "com.nagilab.yoikagen",
-   "public": false,
-   "icon": "",
-   "adult": false,
-   "langs": [
-    "ja",
-    "en",
-    "zh-Hans",
-    "es",
-    "ar",
-    "fr",
-    "pt-BR"
-   ],
-   "store": "https://play.google.com/store/apps/details?id=com.nagilab.yoikagen",
-   "text": {
-    "ja": {
-     "name": "よいかげん",
-     "desc": "お酒を減らして浮いたお金が見える"
-    },
-    "en": {
-     "name": "Yoikagen",
-     "desc": "Drink less, see what you save"
-    },
-    "zh-Hans": {
-     "name": "Yoikagen",
-     "desc": "少喝酒，看见省下的钱"
-    },
-    "es": {
-     "name": "Yoikagen",
-     "desc": "Bebe menos y ve lo que ahorras"
-    },
-    "ar": {
-     "name": "Yoikagen",
-     "desc": "اشرب أقل وشاهد ما توفّره"
-    },
-    "fr": {
-     "name": "Yoikagen",
-     "desc": "Buvez moins, voyez vos économies"
-    },
-    "pt-BR": {
-     "name": "Yoikagen",
-     "desc": "Beba menos e veja quanto economiza"
-    }
-   },
-   "xmission": {
-    "event": "xmission_goal",
-    "text": {
-     "ja": "3日記録する",
-     "en": "Log 3 days",
-     "zh-Hans": "记录3天",
-     "es": "Registra 3 días",
-     "ar": "سجّل 3 أيام",
-     "fr": "Notez 3 jours",
-     "pt-BR": "Registre 3 dias"
-    }
-   }
-  },
-  {
-   "id": "focuspet",
-   "package": "com.nagilab.focuspet",
-   "public": false,
-   "icon": "",
-   "adult": false,
-   "langs": [
-    "ja",
-    "en",
-    "zh-Hans",
-    "es",
-    "ar",
-    "fr",
-    "pt-BR"
-   ],
-   "store": "https://play.google.com/store/apps/details?id=com.nagilab.focuspet",
-   "text": {
-    "ja": {
-     "name": "集中ペット",
-     "desc": "集中するとペットが育つ"
-    },
-    "en": {
-     "name": "Focus Pet",
-     "desc": "Stay focused, grow your pet"
-    },
-    "zh-Hans": {
-     "name": "专注宠物",
-     "desc": "专注就能养大宠物"
-    },
-    "es": {
-     "name": "Focus Pet",
-     "desc": "Concéntrate y cría tu mascota"
-    },
-    "ar": {
-     "name": "Focus Pet",
-     "desc": "ركّز وربِّ حيوانك الأليف"
-    },
-    "fr": {
-     "name": "Focus Pet",
-     "desc": "Concentrez-vous, faites grandir votre animal"
-    },
-    "pt-BR": {
-     "name": "Focus Pet",
-     "desc": "Foque e crie seu pet"
-    }
-   },
-   "xmission": {
-    "event": "xmission_goal",
-    "text": {
-     "ja": "25分集中を1回",
-     "en": "Complete one 25-min focus",
-     "zh-Hans": "完成一次25分钟专注",
-     "es": "Completa 25 min de enfoque",
-     "ar": "أكمل 25 دقيقة تركيز",
-     "fr": "Faites 25 min de concentration",
-     "pt-BR": "Complete 25 min de foco"
-    }
-   }
-  },
-  {
-   "id": "koichat",
-   "package": "com.nagilab.koichat",
-   "public": false,
-   "icon": "",
-   "adult": true,
-   "langs": [
-    "ja",
-    "en",
-    "zh-Hans",
-    "es",
-    "ar",
-    "fr",
-    "pt-BR"
-   ],
-   "store": "https://play.google.com/store/apps/details?id=com.nagilab.koichat",
-   "text": {
-    "ja": {
-     "name": "KoiChat",
-     "desc": "AIの恋人とチャット"
-    },
-    "en": {
-     "name": "KoiChat",
-     "desc": "Chat with your AI crush"
-    },
-    "zh-Hans": {
-     "name": "KoiChat",
-     "desc": "与AI恋人聊天"
-    },
-    "es": {
-     "name": "KoiChat",
-     "desc": "Chatea con tu crush IA"
-    },
-    "ar": {
-     "name": "KoiChat",
-     "desc": "دردش مع حبيبك الافتراضي"
-    },
-    "fr": {
-     "name": "KoiChat",
-     "desc": "Discutez avec votre crush IA"
-    },
-    "pt-BR": {
-     "name": "KoiChat",
-     "desc": "Converse com seu crush de IA"
-    }
-   },
-   "xmission": {
-    "event": "xmission_goal",
-    "text": {
-     "ja": "10通話す",
-     "en": "Send 10 messages",
-     "zh-Hans": "发送10条消息",
-     "es": "Envía 10 mensajes",
-     "ar": "أرسل 10 رسائل",
-     "fr": "Envoyez 10 messages",
-     "pt-BR": "Envie 10 mensagens"
-    }
-   }
-  },
-  {
-   "id": "hima",
-   "package": "com.shshcode.hima",
-   "public": false,
-   "icon": "",
-   "adult": true,
-   "langs": [
-    "ja"
-   ],
-   "store": "https://play.google.com/store/apps/details?id=com.shshcode.hima",
-   "text": {
-    "ja": {
-     "name": "HIMA",
-     "desc": "ひまな今、話せる人とつながる"
-    }
-   },
-   "xmission": {
-    "event": "xmission_goal",
-    "text": {
-     "ja": "1人と話す",
-     "en": "Chat with one person"
-    }
-   }
-  }
- ]
+  ]
 }
